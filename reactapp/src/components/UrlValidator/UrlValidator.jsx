@@ -17,8 +17,7 @@ const UrlValidator = () => {
  
     const convertJson = (jsonString) => {
         const jsonObject = JSON.parse(jsonString);
-        const params = 
-        return "?" + Object.entries(jsonObject).map((e) => e.join("=")).join("&")";
+        const params = "?" + Object.entries(jsonObject).map((e) => e.join("=")).join("&");
         return params;
     }
  
